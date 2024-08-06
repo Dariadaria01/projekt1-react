@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navigation-wrapper {
+  height: 50px;
+  background-color: #333;
+  line-height: 50px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  display: none;
+}
+.link {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url('https://cdn.pixabay.com/photo/2014/11/27/10/29/mountain-547363_1280.jpg');
+}
+.header-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 50px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.header-title {
+  color: aliceblue;
+  font-size: 32px;
+}
+.header-info {
+  color: aliceblue;
+  font-size: 20px;
+}
+.header-link {
+  display: block;
+  transition: 0.5s;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 60px;
+  color: white;
+  background-color: transparent;
+  border: white solid;
+}
+
+.specjalist-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.specjalist-photo {
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.specjalist-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 40px;
+}
+.aboutUs-header {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.aboutUs {
+  padding: 30px 0;
+  background-color: #405d78;
+}
+.offerWrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 200px;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px auto;
+}
+.offer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  transition: 500ms;
+}
+.offer-new {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: -10px;
+  background-color: orangered;
+  border-radius: 50%;
+}
+.specjalist-header {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 24px;
+}
+.specjalist-tittle {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.footer {
+  background-color: #4e4e4e;
+  color: white;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+}
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+  .links {
+    display: flex;
+    gap: 50px;
+  }
+  .header-title {
+    width: 60%;
+  }
+  .specjalist-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .specjalist-item:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  .specjalist-item:nth-of-type(even) .specjalist-info {
+    text-align: right;
+  }
+  .specjalist-header {
+    font-size: 30px;
+    text-align: left;
+  }
+  .specjalist-tittle {
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .offerWrapper {
+    width: 700px;
+    grid-template-columns: 200px 200px 200px;
+  }
+  .aboutUs-header {
+    font-size: 30px;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (hover: hover) {
+  .link-disabled:hover {
+    cursor: not-allowed;
+  }
+  .header-link:hover {
+    background-color: white;
+    color: black;
+  }
+  .offer:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
