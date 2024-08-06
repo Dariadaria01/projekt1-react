@@ -3,7 +3,7 @@ const Menu = () => {
     <nav className='navigation-wrapper'>
       <div className='container'>
         <div className='navigation'>
-          <a className='link' href='#'>
+          <a className='link' href='/'>
             moja firma
           </a>
 
