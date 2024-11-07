@@ -1,10 +1,10 @@
-Technologie
+## Technologie
 Projekt został stworzony za pomocą:
 
-html
-js
-css
+html,
+js,
+css,
 REACT
 
-Netlify
+## Netlify
 https://sprightly-kataifi-624038.netlify.app/
